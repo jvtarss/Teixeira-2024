@@ -1,0 +1,15 @@
+Status	/home/jvtars/ipe/bam_files/SRR11144484.sorted.bam	/home/jvtars/ipe/bam_files/SRR11144485.sorted.bam	/home/jvtars/ipe/bam_files/SRR11144486.sorted.bam	/home/jvtars/ipe/bam_files/SRR11144481.sorted.bam	/home/jvtars/ipe/bam_files/SRR11144482.sorted.bam
+Assigned	18200054	30946191	24346678	52320289	23682478
+Unassigned_Unmapped	4376538	6659842	4816582	10408059	6525228
+Unassigned_Read_Type	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0
+Unassigned_MultiMapping	4558738	7542313	6130657	12465140	5658962
+Unassigned_Secondary	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0
+Unassigned_NoFeatures	2883690	5316881	4885696	9008625	4219082
+Unassigned_Overlapping_Length	0	0	0	0	0
+Unassigned_Ambiguity	91740	181413	96776	310576	113011
