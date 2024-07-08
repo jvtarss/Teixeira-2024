@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# List of SRA accessions
-sra_accessions=(
-    "SRR11144484"
+#lista de accessions do sra
+sra_accessions=(    "SRR11144484"
     "SRR11144485"
     "SRR11144486"
 )
