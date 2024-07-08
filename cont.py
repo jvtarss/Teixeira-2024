@@ -7,29 +7,22 @@ import os
 file_directory = "/home/jvtars/ipe/quantification_results/"
 file_path = os.path.join(file_directory, "combined_counts.txt")
 
-# Ler o arquivo com o delimitador correto
 data = pd.read_csv(file_path, sep='\t')
 
-# Verificar os nomes das colunas
 print("Colunas disponíveis no arquivo:", data.columns.tolist())
 
-# Remover os caminhos dos nomes das colunas
 data.columns = [os.path.basename(col) if col != 'Geneid' else col for col in data.columns]
 
-# Verificar os nomes das colunas novamente após a simplificação
-print("Colunas simplificadas:", data.columns.tolist())
+print("Colunas simples:", data.columns.tolist())
 
 selected_samples = ['SRR11144481.sorted.bam', 'SRR11144482.sorted.bam', 'SRR11144483.sorted.bam']
-print("Amostras selecionadas:", selected_samples)
+print("Amostras:", selected_samples)
 
-# Selecionar apenas as colunas de interesse
 data_selected = data[['Geneid'] + selected_samples]
 
-# Filtrar os genes de interesse
 selected_scaffolds = ['CDL12_06892', 'CDL12_25384', 'CDL12_00951', 'CDL12_16715', 'CDL12_29787']
 data_selected = data_selected[data_selected['Geneid'].isin(selected_scaffolds)]
-
-# Plotar os dados
+#Plot
 sns.set(style="whitegrid")
 plt.figure(figsize=(10, 6))
 
